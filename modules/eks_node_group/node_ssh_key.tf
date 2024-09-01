@@ -1,0 +1,4 @@
+resource "aws_key_pair" "node_ssh_key" {
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPjAH4XSyKlQzJBVXaGLlZYqhQwtqRiA1R4FtuKSrurP5TWOOBrVAhKKPxQibVKduHzwWx23NiGx816piUZFkZvtJ1rfA76graCSYn9lFzoHbPaXGrFQME+xlUYql2cKiHff4jcfJRc4YdBVO+Rk0k8uYajOSTSeq6zAERn/LPO9/8fhf56dpy4eXSDCcMNEEow6XzRRsBfSmbsFKenwZ8L7OeHuViEG9SYWbsoSeoGy6iSLXG+mpfCX6hVouwFrcO+Cv5PTOisT1L4viEuUOaJNlSo+FG5WzHED15a9/Yzgvgwpf0fkJog4gc5Mwp2pryB3C2Kg3DROBZ0LWeEwCD root@localhost.localdomain"
+  key_name   = var.nodegroup_keypair
+}
